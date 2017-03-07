@@ -1,0 +1,23 @@
+<!--
+#include <iostream>
+using std::cout;
+
+extern "C" void myfunc()
+{
+    cout <<
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Example 02</title>
+    </head>
+    <body>
+        <p>This program illustrates how to run a program as a shared library.</p>
+        <p>The shared library (this file) can be compiled with <code>cat example/03a-shared-library.html | build/html2cpp | g++ -fPIC -shared -x c++ - -o build/03a-shared-library.so</code></p>
+        <p>Note that you also need the program that loads the shared library.</p>
+        <p>The executable can be compiled with <code>cat example/03b-shared-library.cpp | g++ -x c++ -ldl - -o build/03b-shared-library</code></p>
+    </body>
+</html>
+<!--;}-->

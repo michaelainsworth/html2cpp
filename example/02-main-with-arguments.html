@@ -1,0 +1,28 @@
+<!--
+#include <iostream>
+using std::cout;
+
+int main(int argc, const char** argv)
+{
+    cout <<
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Example 02</title>
+    </head>
+    <body>
+        <p>This program illustrates how to access parameters.</p>
+        <p>It can also be compiled with <code>cat example/02-main-with-arguments.html | build/html2cpp | g++ -x c++ - -o build/02-main-with-arguments</code></p>
+        There are <strong><!-- << argc << --> arguments!</strong>
+        <!--; for (int i = 1; i < argc; ++i) { cout << -->
+            Argument <!-- << i << -->: <!-- << argv[i] << --><br/>
+        <!--; } cout << -->
+    </body>
+</html>
+<!--;
+    return 0;
+}
+-->
