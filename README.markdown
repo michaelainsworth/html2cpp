@@ -48,6 +48,25 @@ an instruction to do something with the trailing HTML C++ string.
         <strong><!-- << i << --></strong>
     <!--;} -->
 
+A different way of formatting it might be:
+
+    <!--
+    #include <iostream>
+    using std::cout;
+    
+    int main(int argc, const char** argv)
+    {
+        cout << -->I'm counting to <strong>10</strong><!--;
+        for (int i = 1; i <= 10; ++i)
+        {
+            std::cout << --><strong><!-- << i << --></strong><!--;
+        }
+    }
+    -->
+
+Note, that it's easier to think of the syntax as `-->` and `<!--` surrounding a
+double-quoted string. E.g., `-->LOOK AT ME, I'M A STRING<!--`.
+
 ### Possibility to Combine Responsibilities
 
 Separation of concerns, particularly in relation to business logic and
